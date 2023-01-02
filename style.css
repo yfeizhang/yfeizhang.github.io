@@ -1,8 +1,8 @@
 #home {
     background: rgb(245, 243, 243);
-    width: 100vw;
-    height: 84vh;
-    padding-top: 6%;
+    width: auto;
+    height: auto;
+    padding-top: 60px;
     padding-left: 4%;
     padding-right: 4%;
 }
@@ -53,8 +53,9 @@ ul.no-bullets_school {
 
 #publications {
     padding-left: 10%;
-    width: 100vw;
-    height: 65vh;
+    padding-top: 30px;
+    width: auto;
+    height: auto;
 }
 
 .tag {
@@ -66,6 +67,8 @@ ul.no-bullets_school {
 #experience {
     padding-left: 10%;
     padding-top: 30px;
+    width: auto;
+    height: auto;
 }
 
 .box {
@@ -86,16 +89,21 @@ ul.no-bullets_school {
 #projects {
     padding-left: 10%;
     padding-top: 25px;
+    width: auto;
+    height: auto;
 }
 
 #interests {
     padding-left: 10%;
     padding-top: 25px;
+    width: auto;
+    height: auto;
 }
 
 #contact {
-    padding-top: 2%;
     padding-top: 30px;
+    width: auto;
+    height: auto;
 }
 
 #abstract1 {
