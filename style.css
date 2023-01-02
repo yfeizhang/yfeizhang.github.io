@@ -1,0 +1,108 @@
+#home {
+    background: rgb(245, 243, 243);
+    width: 100vw;
+    height: 84vh;
+    padding-top: 6%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+}
+
+.column {
+    float: left;
+    padding: 20px;
+}
+
+.column.sideleft {
+    width: 30%;
+    text-align: center;
+}
+
+.column.sideright {
+    width: 70%;
+}
+
+.row_:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .column.sideleft,
+    .column.sideright {
+        width: 100%;
+    }
+}
+
+ul.no-bullets {
+    list-style-type: none;
+}
+
+ul.no-bullets_school {
+    list-style-type: none;
+    padding-left: 1%;
+}
+
+#publications {
+    padding-left: 10%;
+    width: 100vw;
+    height: 65vh;
+}
+
+.tag {
+    font-size: 18px;
+    background-color: #63666378;
+    font-weight: bold;
+}
+
+#experience {
+    padding-left: 10%;
+    padding-top: 30px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.div1 {
+    display: flex;
+    align-items: center;
+}
+
+.div2 {
+    float: left;
+    vertical-align: 30;
+}
+
+#projects {
+    padding-left: 10%;
+    padding-top: 25px;
+}
+
+#interests {
+    padding-left: 10%;
+    padding-top: 25px;
+}
+
+#contact {
+    padding-top: 2%;
+    padding-top: 30px;
+}
+
+#abstract1 {
+    border-style: solid;
+    border-color: rgb(207, 204, 204);
+    width: 85%;
+    padding: 1%;
+    border-radius: 6pt;
+    display: block;
+}
