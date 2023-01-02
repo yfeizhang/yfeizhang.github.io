@@ -20,7 +20,7 @@
     <div class="nav">
         <nav class="navbar fixed-top navbar-expand-lg" style="background-color: rgb(255, 123, 0);">
             <div class="container-fluid">
-                <a class="navbar-brand" id="refreshButton">Yifei Zhang</a>
+                <a class="navbar-brand" href="index.html">Yifei Zhang</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -100,7 +100,7 @@
         </div>
     </div>
 
-    <div id="publications" style="padding-top: 30px;">
+    <div id="publications">
         <h1>📄 Publications</h1>
         <ul style = "margin-bottom: 0">
             <li><span style = "font-weight: 550; background:rgb(126, 126, 126); color:rgb(255, 255, 255); font-size: 15px; padding: 3px; border-radius: 5px">Workshop Paper</span> <span style = "font-weight: bold; font-size: 18px;">Incremental Fourier Neural Operator</span> 
@@ -112,7 +112,7 @@
             <button type="button" class="btn btn-outline-primary btn-sm" onclick="window.open('https://arxiv.org/pdf/2211.15188.pdf')">PDF</button>
             <button type="button" class="btn btn-outline-primary btn-sm" onclick="myFunction()">Abstract</button>
             <button type="button" class="btn btn-outline-primary btn-sm" onclick="window.open('https://arxiv.org/abs/2211.15188')">arXiv</button>
-            <div id="abstract1">
+            <div id="abstract">
                 Recently, neural networks have proven their impressive ability to solve partial differential equations (PDEs). 
                 Among them, Fourier neural operator (FNO) has shown success in learning solution operators for highly non-linear problems such as turbulence flow. 
                 FNO is discretization-invariant, where it can be trained on low-resolution data and generalizes to problems with high-resolution. 
@@ -129,7 +129,7 @@
         </ul>
     </div>
 
-    <div id=experience>
+    <div id="experience">
         <h1>👨‍💻 Experience</h1>
         <div class="box">
             <img style = "width: 80px; height: 70px; float: left; padding-right:10px;" src="Caltech.jpeg">
@@ -142,7 +142,7 @@
         </div>
     </div>
 
-    <section id=projects>
+    <section id="projects">
         <h1>💻 Projects</h1>
         <h4 style = "margin: 15px">Low-rank Bias of Gradient Descent</h4>
         <img style = "width: 1050px; height: 240px;" src="project1.jpeg">
@@ -155,7 +155,7 @@
         <img style = "width: 700px; height: 300px;" src="project2.jpeg">
     </section>
     
-    <section id=interests>
+    <section id="interests">
         <h1>❤️ Interests</h1>
         <ul>
             <li>Music & Movie. I love clipping and editing films into short videos and share online.</li>
@@ -164,7 +164,7 @@
         </ul>
     </section>
 
-    <section id=contact>
+    <section id="contact">
         <div class="row">
             <div class="column sideleft">
                 <h1>Contact</h1>
@@ -187,19 +187,13 @@
     
     <script>
         function myFunction() {
-            var x = document.getElementById("abstract1");
+            var x = document.getElementById("abstract");
             if (x.style.display === "none") {
             x.style.display = "block";
             } else {
             x.style.display = "none";
             }
         }
-
-        document.getElementById('refreshButton').addEventListener('click', function() {   //alert(1);
-		    location.href="index.html";
-            //location.reload();
-            window.scrollTo(0, 0);
-        })
     </script>
 </body>
 
