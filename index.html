@@ -1,67 +1,96 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Yifei Zhang Home Page</title>
     <link rel="icon" href="graduation_cap.png">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
-</head>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
 
 <body>
-    <div class="nav">
-        <nav class="navbar fixed-top navbar-expand-lg" style="background-color: rgb(255, 123, 0);">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Yifei Zhang</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#publications">Publications</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experience">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#interests">Interests</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search on this site"
-                            aria-label="Search">
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </div>
+    <nav class="navbar fixed-top navbar-expand-lg" style="background-color: rgb(255, 123, 0);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Yifei Zhang</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-nav-scroll" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto my-2 my-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">
+                        <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#publications">
+                        <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                            Publications
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">
+                        <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                            Experience
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">
+                        <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                            Projects
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#interests">
+                        <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                            Interests
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                        <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                            Contact
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <script>
+                var domainroot="yfeizhang.github.io"
+                function Gsitesearch(curobj){ curobj.q.value="site:"+domainroot+" "+curobj.qfront.value } 
+            </script>
+            <form class="form-inline my-2 my-lg-0" action="http://www.google.com/search" method="get" role="search" onSubmit="Gsitesearch(this)">
+                <input name="q" type="hidden" />
+                <input class="form-control mr-sm-2" name="qfront" type="search" placeholder="Search on this site" aria-label="Search">
+            </form>
+        </div>
+      </div>
+    </nav>
 
     <div id="home">
         <div class="row">
             <div class="column sideleft">
                 <img class="avatar" src="Image.png">
                 <h2>Yifei Zhang</h2>
-                <h4 text-align: center>Undergraduate <a href="https://www.cs.wisc.edu/" target=_blank>@WisconsinCS</a></h4>
+                <h4 text-align: center>Undergraduate <a href="https://www.cs.wisc.edu/" target=_blank>@WisconsinCS</a>
+                </h4>
                 <span><a href="mailto:yzhang2536@wisc.edu"><i class="fa fa-envelope"
                             style="font-size:36px"></i></a></span>
                 <span><a href="https://twitter.com/yifei_zh" target=_blank><i class="fab fa-twitter"
@@ -75,15 +104,19 @@
             <div class="column sideright">
                 <h1>🧐 About</h1>
                 <p>I'm Yifei, a senior undergraduate at <a href=https://www.wisc.edu/ target=_blank>University of
-                    Wisconsin-Madison</a>, where I am fortunately advised by 
-                    <a href=https://pages.cs.wisc.edu/~fredsala/ target=_blank>Prof. Fred Sala</a> on weakly supervised 
-                    learning. Also, I am currently working with <a href=http://tensorlab.cms.caltech.edu/users/anima/index.html
-                    target=_blank>Prof. Anima Anandkumar</a> and 
+                        Wisconsin-Madison</a>, where I am fortunately advised by
+                    <a href=https://pages.cs.wisc.edu/~fredsala/ target=_blank>Prof. Fred Sala</a> on weakly supervised
+                    learning. Also, I am currently working with <a
+                        href=http://tensorlab.cms.caltech.edu/users/anima/index.html target=_blank>Prof. Anima
+                        Anandkumar</a> and
                     <a href=https://jiawei-zhao.netlify.app/ target=_blank>Dr. Jiawei Zhao</a> on implicit bias of deep
-                    learning at <a href=https://www.caltech.edu/ target=_blank>California Institute of Technology</a> I am broadly
-                    interested in the fundumental problems of machine learning and deep learning from 
-                    theoretical and algorithmic perspectives, e.g., learning with limited supervision and efficeint optimization.
-                    I am aiming to design and apply theoretically guaranteed algorithms to solve some practical problems, 
+                    learning at <a href=https://www.caltech.edu/ target=_blank>California Institute of Technology</a> I
+                    am broadly
+                    interested in the fundumental problems of machine learning and deep learning from
+                    theoretical and algorithmic perspectives, e.g., learning with limited supervision and efficeint
+                    optimization.
+                    I am aiming to design and apply theoretically guaranteed algorithms to solve some practical
+                    problems,
                     espectially in science and angent-modeling.
                 </p>
                 <p><i class="fas fa-download pr-1 fa-fw"></i> Download my <a href=CV_Yifei.pdf target=_blank>CV</a>.</p>
@@ -94,76 +127,107 @@
                 </ul>
                 <h5>Education</h5>
                 <ul class="no-bullets_school">
-                    <li>&nbsp &nbsp<i class="fas fa-graduation-cap"></i>&nbsp B.S. in Computer Sceince, 2023 (Expected)<br>&nbsp &nbsp &nbsp &nbsp &nbsp University of Wisconsin-Madison</li>
+                    <li>&nbsp &nbsp<i class="fas fa-graduation-cap"></i>&nbsp B.S. in Computer Sceince, 2023
+                        (Expected)<br>&nbsp &nbsp &nbsp &nbsp &nbsp University of Wisconsin-Madison</li>
                 </ul>
             </div>
         </div>
     </div>
 
+    <a id="publications" style=" position: relative; top: -30px; display: block; height: 0; overflow: hidden;"></a>
     <div id="publications">
         <h1>📄 Publications</h1>
-        <ul style = "margin-bottom: 0">
-            <li><span style = "font-weight: 550; background:rgb(126, 126, 126); color:rgb(255, 255, 255); font-size: 15px; padding: 3px; border-radius: 5px">Workshop Paper</span> <span style = "font-weight: bold; font-size: 18px;">Incremental Fourier Neural Operator</span> 
-            <br>
-            Jiawei Zhao, Robert Joseph George, <span style = "font-weight: bold">Yifei Zhang</span>, Zongyi Li, Anima Anandkumar
-            <br>
-            <a href=https://ai4sciencecommunity.github.io/neurips22.html target=_blank>NeurIPS 2022 AI4Science</a>
-            <br>
-            <button type="button" class="btn btn-outline-primary btn-sm" onclick="window.open('https://arxiv.org/pdf/2211.15188.pdf')">PDF</button>
-            <button type="button" class="btn btn-outline-primary btn-sm" onclick="myFunction()">Abstract</button>
-            <button type="button" class="btn btn-outline-primary btn-sm" onclick="window.open('https://arxiv.org/abs/2211.15188')">arXiv</button>
-            <div id="abstract">
-                Recently, neural networks have proven their impressive ability to solve partial differential equations (PDEs). 
-                Among them, Fourier neural operator (FNO) has shown success in learning solution operators for highly non-linear problems such as turbulence flow. 
-                FNO is discretization-invariant, where it can be trained on low-resolution data and generalizes to problems with high-resolution. 
-                This property is related to the low-pass filters in FNO, where only a limited number of frequency modes are selected to propagate information. 
-                However, it is still a challenge to select an appropriate number of frequency modes and training resolution for different PDEs. 
-                Too few frequency modes and low-resolution data hurt generalization, 
-                while too many frequency modes and high-resolution data are computationally expensive and lead to over-fitting. 
-                To this end, we propose Incremental Fourier Neural Operator (IFNO), which augments both the frequency modes and data resolution incrementally during training. 
-                We show that IFNO achieves better generalization (around 15% reduction on testing L2 loss) while reducing the computational cost by 35%, 
-                compared to the standard FNO. In addition, we observe that IFNO follows the behavior of implicit regularization in FNO, 
-                which explains its excellent generalization ability.
-            </div>
+        <ul style="margin-bottom: 0">
+            <li><span
+                    style="font-weight: 550; background:rgb(126, 126, 126); color:rgb(255, 255, 255); font-size: 15px; padding: 3px; border-radius: 5px">Workshop
+                    Paper</span> <span style="font-weight: bold; font-size: 18px;">Incremental Fourier Neural
+                    Operator</span>
+                <br>
+                Jiawei Zhao, Robert Joseph George, <span style="font-weight: bold">Yifei Zhang</span>, Zongyi Li, Anima
+                Anandkumar
+                <br>
+                <a href=https://ai4sciencecommunity.github.io/neurips22.html target=_blank>NeurIPS 2022 AI4Science</a>
+                <br>
+                <button type="button" class="btn btn-outline-primary btn-sm"
+                    onclick="window.open('https://arxiv.org/pdf/2211.15188.pdf')">PDF</button>
+                <button type="button" class="btn btn-outline-primary btn-sm" onclick="myFunction()">Abstract</button>
+                <button type="button" class="btn btn-outline-primary btn-sm"
+                    onclick="window.open('https://arxiv.org/abs/2211.15188')">arXiv</button>
+                <div id="abstract">
+                    Recently, neural networks have proven their impressive ability to solve partial differential
+                    equations (PDEs).
+                    Among them, Fourier neural operator (FNO) has shown success in learning solution operators for
+                    highly non-linear problems such as turbulence flow.
+                    FNO is discretization-invariant, where it can be trained on low-resolution data and generalizes to
+                    problems with high-resolution.
+                    This property is related to the low-pass filters in FNO, where only a limited number of frequency
+                    modes are selected to propagate information.
+                    However, it is still a challenge to select an appropriate number of frequency modes and training
+                    resolution for different PDEs.
+                    Too few frequency modes and low-resolution data hurt generalization,
+                    while too many frequency modes and high-resolution data are computationally expensive and lead to
+                    over-fitting.
+                    To this end, we propose Incremental Fourier Neural Operator (IFNO), which augments both the
+                    frequency modes and data resolution incrementally during training.
+                    We show that IFNO achieves better generalization (around 15% reduction on testing L2 loss) while
+                    reducing the computational cost by 35%,
+                    compared to the standard FNO. In addition, we observe that IFNO follows the behavior of implicit
+                    regularization in FNO,
+                    which explains its excellent generalization ability.
+                </div>
             </li>
         </ul>
     </div>
 
+    <a id="experience" style=" position: relative; top: -35px; display: block; height: 0; overflow: hidden;"></a>
     <div id="experience">
         <h1>👨‍💻 Experience</h1>
         <div class="box">
-            <img style = "width: 80px; height: 70px; float: left; padding-right:10px;" src="Caltech.jpeg">
-                <div style = "font-weight: 440; font-size: 20px; line-height: 26px">
-                    Research Intern @Computing + Mathematical Sciences, California Institute of Technology
-                    <br>
-                    <span style = "font-weight: 550; background:rgba(23, 177, 177, 0.962); color:rgb(255, 255, 255); font-size: 13px; padding: 3px; border-radius: 5px">June 2022 - Oct. 2022</span> 
-                    <span style = "font-weight: 550; background:rgba(23, 177, 177, 0.962); color:rgb(255, 255, 255); font-size: 13px; padding: 3px; border-radius: 5px">Advisor: Prof. Anima Anandkumar and Dr. Jiawei Zhao</span>
-                </div>
+            <img style="width: 80px; height: 70px; float: left; padding-right:10px;" src="Caltech.jpeg">
+            <div style="font-weight: 440; font-size: 20px; line-height: 26px">
+                Research Intern @Computing + Mathematical Sciences, California Institute of Technology
+                <br>
+                <span
+                    style="font-weight: 550; background:rgba(23, 177, 177, 0.962); color:rgb(255, 255, 255); font-size: 13px; padding: 3px; border-radius: 5px">June
+                    2022 - Oct. 2022</span>
+                <span
+                    style="font-weight: 550; background:rgba(23, 177, 177, 0.962); color:rgb(255, 255, 255); font-size: 13px; padding: 3px; border-radius: 5px">Advisor:
+                    Prof. Anima Anandkumar and Dr. Jiawei Zhao</span>
+            </div>
         </div>
     </div>
 
+    <a id="projects" style=" position: relative; top: -35px; display: block; height: 0; overflow: hidden;"></a>
     <section id="projects">
         <h1>💻 Projects</h1>
-        <h4 style = "margin: 15px">Low-rank Bias of Gradient Descent</h4>
-        <img style = "width: 1050px; height: 240px;" src="project1.jpeg">
+        <h4 style="margin: 15px">Low-rank Bias of Gradient Descent</h4>
+        <img style="width: 1050px; height: 240px;" src="project1.jpeg">
         <br>
         <a href=https://api.wandb.ai/report/incre-learning/bth46k0y target=_blank>Report1</a>
-        <a href=https://wandb.ai/incre-learning/Further_Ablation/reports/Further-Ablation-Studies-of-GD-s-Low-Rank-Bias--VmlldzoyNTA2MDI3?accessToken=9epu8agr0uho004aw6e2f2ins3lzu3lrnbpezacyj5brxmoyoefw7pwih4q7lgqb target=_blank>Report2</a>
-        <a href=https://wandb.ai/snowball2534/low_rank_bias_on_training_CIFAR10/reports/Low-Rank-Bias-of-GD-on-Training-Resnet--VmlldzoyNjkzOTQx?accessToken=psgs0leedt06aalncwezcxj5r12n51r2n30b5umckf449aq44vm311rrvhn4024u target=_blank>Report3</a>
-        <a href=https://wandb.ai/snowball2534/low_rank_bias_on_training_sequeence_data/reports/Low-Rank-Bias-of-GD-on-Training-Sequence-Data--VmlldzoyNzgwODI5?accessToken=bzcqx63xe83j9fnztouz4gf6d1i5twa5568anecgp2urslkydnmh61ofif6saayw target=_blank>Report4</a>
-        <h4 style = "margin: 10px">Weakly-Supervised Learning with Tensor Decomposition</h4>
-        <img style = "width: 700px; height: 300px;" src="project2.jpeg">
+        <a href=https://wandb.ai/incre-learning/Further_Ablation/reports/Further-Ablation-Studies-of-GD-s-Low-Rank-Bias--VmlldzoyNTA2MDI3?accessToken=9epu8agr0uho004aw6e2f2ins3lzu3lrnbpezacyj5brxmoyoefw7pwih4q7lgqb
+            target=_blank>Report2</a>
+        <a href=https://wandb.ai/snowball2534/low_rank_bias_on_training_CIFAR10/reports/Low-Rank-Bias-of-GD-on-Training-Resnet--VmlldzoyNjkzOTQx?accessToken=psgs0leedt06aalncwezcxj5r12n51r2n30b5umckf449aq44vm311rrvhn4024u
+            target=_blank>Report3</a>
+        <a href=https://wandb.ai/snowball2534/low_rank_bias_on_training_sequeence_data/reports/Low-Rank-Bias-of-GD-on-Training-Sequence-Data--VmlldzoyNzgwODI5?accessToken=bzcqx63xe83j9fnztouz4gf6d1i5twa5568anecgp2urslkydnmh61ofif6saayw
+            target=_blank>Report4</a>
+        <h4 style="margin: 10px">Weakly-Supervised Learning with Tensor Decomposition</h4>
+        <img style="width: 700px; height: 300px;" src="project2.jpeg">
     </section>
-    
+
+    <a id="interests" style=" position: relative; top: -35px; display: block; height: 0; overflow: hidden;"></a>
     <section id="interests">
         <h1>❤️ Interests</h1>
         <ul>
             <li>Music & Movie. I love clipping and editing films into short videos and share online.</li>
-            <li>Travelling & Checking out new places. I have lived in four countires with the willingness to travel more.</li>
-            <li>Writing & Researching on new topics. Some examples: <a href=Communication_Theory.pdf target=_blank>Communication Theory</a>, <a href=Partial_Self-Driving.pdf target=_blank>Partial Self-Driving</a>, <a href=Contrasting_Hmong&Lao.pdf target=_blank>Contrasting Hmong & Lao</a>.</li>
+            <li>Travelling & Checking out new places. I have lived in four countires with the willingness to travel
+                more.</li>
+            <li>Writing & Researching on new topics. Some examples: <a href=Communication_Theory.pdf
+                    target=_blank>Communication Theory</a>, <a href=Partial_Self-Driving.pdf target=_blank>Partial
+                    Self-Driving</a>, <a href=Contrasting_Hmong&Lao.pdf target=_blank>Contrasting Hmong & Lao</a>.</li>
         </ul>
     </section>
 
+    <a id="contact" style=" position: relative; top: -20px; display: block; height: 0; overflow: hidden;"></a>
     <section id="contact">
         <div class="row">
             <div class="column sideleft">
@@ -171,30 +235,30 @@
             </div>
             <div class="column sideright">
                 <ul class="no-bullets">
-                    <li><i class="fa fa-envelope" style="font-size:36px"></i> &nbsp <a href="mailto:yzhang2536@wisc.edu" target=_blank>yzhang2536@wisc.edu</a></li>
+                    <li><i class="fa fa-envelope" style="font-size:36px"></i> &nbsp <a href="mailto:yzhang2536@wisc.edu"
+                            target=_blank>yzhang2536@wisc.edu</a></li>
                     <li><i class="fa fa-map-marker" style="font-size:36px"></i> &nbsp Madison, WI, 53706</li>
-                    <li><i class="fab fa-twitter" style="font-size:36px"></i> &nbsp <a href=https://twitter.com/yifei_zh target=_blank>DM Me</a></li>
-                    <li><i class="fa fa-video-camera" style="font-size:36px"></i> &nbsp <a href=https://uwmadison.zoom.us/j/7408682459 target=_blank>Zoom Me</a></li>
+                    <li><i class="fab fa-twitter" style="font-size:36px"></i> &nbsp <a href=https://twitter.com/yifei_zh
+                            target=_blank>DM Me</a></li>
+                    <li><i class="fa fa-video-camera" style="font-size:36px"></i> &nbsp <a
+                            href=https://uwmadison.zoom.us/j/7408682459 target=_blank>Zoom Me</a></li>
                 </ul>
             </div>
             <p style="text-align: center">@ 2022 Yifei Zhang. Feel free to fork this website's source code.</p>
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-    
     <script>
         function myFunction() {
             var x = document.getElementById("abstract");
             if (x.style.display === "none") {
-            x.style.display = "block";
+                x.style.display = "block";
             } else {
-            x.style.display = "none";
+                x.style.display = "none";
             }
         }
     </script>
+
 </body>
 
 </html>
